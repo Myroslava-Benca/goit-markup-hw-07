@@ -304,6 +304,7 @@ header{
    margin-right: 30px;
    margin-bottom: 30px;
    text-align: center;
+   border: 1px solid #EEEEEE;
 }
 .card li:nth-child(3n) {
     margin-right: 0;
