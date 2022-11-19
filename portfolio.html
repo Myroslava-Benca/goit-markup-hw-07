@@ -10,84 +10,89 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <header>
-    <nav>
-        <a class="logo" href=""><span class="accent">Web</span>Studio</a>
-        <ul class="site-nav list">
-            <li><a class="site-nav-link" href="./studio.html">Студія</a></li>
-            <li><a class="site-nav-link" href="./portfolio.html">Портфоліо</a></li>
-            <li><a class="site-nav-link" href="">Контакти</a></li>
-        </ul>
-    </nav>
-    <a class="site-nav-link tel" href="mailto:info@devstudio.com">info@devstudio.com</a>
-    <a class="site-nav-link tel" href="tel:+380961111111">+38 096 111 11 11</a>
-        </header>
-    <main>
+        <nav class="container  site">
+            <a class="logo" href=""><span class="accent">Web</span>Studio</a>
+            <ul class="site-nav list">
+                <li><a class="site-nav-link" href="./studio.html">Студія</a></li>
+                <li><a class="site-nav-link" href="./portfolio.html">Портфоліо</a></li>
+                <li><a class="site-nav-link" href="">Контакти</a></li>
+            </ul>
+            <ul class="auto-nav list">
+                <li><a class="site-nav-link  tel" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li><a class="site-nav-link tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+    </header>
+
+        <main class="hero">
         <div>
-            <ul class="list">
+            <ul class="list button">
             <li><button class="button-portfolio"  type="button">Усі</button></li>
             <li><button class="button-portfolio" type="button">Веб-сайти</button></li>
             <li><button class="button-portfolio" type="button">Додатки</button></li>
             <li><button class="button-portfolio" type="button">Дизайн</button></li>
             <li><button class="button-portfolio" type="button">Маркетинг</button></li>
-        
         </div>
-        <section>
-        <ul class="list">
+
+        <section class="container items">
+        <ul class="card list">
             <li>
                 <img src="./images/portfolio.jpg" alt="" width="370">
-                <h2>Технокряк</h2>
-                <p>Веб-сайт</p>
+                <h2 class="items-title">Технокряк</h2>
+                <p class="items-text">Веб-сайт</p>
             </li>
             <li>
                 <img src="./images/portfolio2.jpg" alt="" width="370">
-                <h2>Постер New Orlean vs Golden Star</h2>
-                <p>Дизайн</p>
+                <h2 class="items-title">Постер New Orlean vs Golden Star</h2>
+                <p class="items-text">Дизайн</p>
             </li>
             <li>
                 <img src="./images/portfolio3.jpg" alt="" width="370">
-                <h2>Ресторан Seafood</h2>
-                <p>Додаток</p>
+                <h2 class="items-title">Ресторан Seafood</h2>
+                <p class="items-text">Додаток</p>
             </li>
             <li>
                 <img src="./images/portfolio4.jpg" alt="" width="370">
-                <h2>Проєкт Prime</h2>
-                <p>Маркетинг</p>
+                <h2 class="items-title">Проєкт Prime</h2>
+                <p class="items-text">Маркетинг</p>
             </li>
             <li>
                 <img src="./images/portfolio5.jpg" alt="" width="370">
-                <h2>Проєкт Boxes</h2>
-                <p>Додаток</p>
+                <h2 class="items-title">Проєкт Boxes</h2>
+                <p class="items-text">Додаток</p>
             </li>
             <li>
                 <img src="./images/portfolio6.jpg" alt="" width="370">
-                <h2>Inspiration has no Borders</h2>
-                <p>Веб-сайт</p>
+                <h2 class="items-title">Inspiration has no Borders</h2>
+                <p class="items-text">Веб-сайт</p>
             </li>
             <li>
                 <img src="./images/portfolio7.jpg" alt="" width="370">
-                <h2>Видання Limited Edition</h2>
-                <p>Дизайн</p>
+                <h2 class="items-title">Видання Limited Edition</h2>
+                <p class="items-text">Дизайн</p>
             </li>
             <li>
                 <img src="./images/portfolio8.jpg" alt="" width="370">
-                <h2>Проєкт LAB</h2>
-                <p>Маркетинг</p>
+                <h2 class="items-title">Проєкт LAB</h2>
+                <p class="items-text">Маркетинг</p>
             </li>
             <li>
                 <img src="./images/portfolio9.jpg" alt="" width="370">
-                <h2>Growing Business</h2>
-                <p>Додаток</p>
+                <h2 class="items-title">Growing Business</h2>
+                <p class="items-text">Додаток</p>
             </li>
         </ul>
     </section>
-    </main>    
+    </main>   
+    </div>
 
     <footer class="address">
+        <div class="container">
         <a class="logo footer" href=""><span class="accent">Web</span>Studio</a>
         <address>
             <ul class="list">
@@ -96,6 +101,7 @@
                 <li><a class="address-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
         </address>
+        </div>
     </footer>
 </body>
 
