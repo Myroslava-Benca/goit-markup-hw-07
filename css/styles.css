@@ -74,6 +74,9 @@ header{
     display: flex;
     margin-left: auto;
 }
+.auto-nav:not(:last-child) {
+    margin-right: 40px;
+}
 
 .site-nav-link{
     color: var(--title-text-color);
@@ -85,9 +88,6 @@ header{
 }
 .tel{
     color: var(--primery-text-color);
-}
-.tel:not(:last-child) {
-    margin-right: 40px;
 }
 
 .site-nav-link:hover, 
@@ -246,6 +246,9 @@ header{
 .address-link:hover,
 .address-link:focus {
     color: var(--accent-color);
+}
+.white{
+    color: var(--primery-white-color);
 }
 
 /* portfolio */
