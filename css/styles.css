@@ -114,9 +114,10 @@ header{
 }
 .email{
     margin-right: 40px;
+    color: var(--primery-text-color);
 }
 
-.site-nav-link-tel{
+.tel{
     color: var(--primery-text-color);
 }
 
