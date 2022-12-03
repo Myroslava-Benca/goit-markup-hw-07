@@ -96,13 +96,6 @@ header{
     margin-right: 10px;
     align-items: center;
 }
-
-.site-nav-link:hover,
-.site-nav-link:focus {
-    color: var(--accent-color);
-    fill: var(--accent-color);
-}
-
 .site-nav-link{
     color: var(--title-text-color);
     font-weight: 500;
@@ -110,7 +103,28 @@ header{
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-
+    padding-top: 32px;
+    padding-bottom: 32px;
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.site-nav-link:hover,
+.site-nav-link:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+}
+.active::after{
+    content: "";
+    opacity: active;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
 }
 .email{
     margin-right: 40px;
@@ -170,9 +184,45 @@ header{
     border-radius: 6px;
     padding: 10px 32px;
     border: 1px solid transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-main-button:focus {
     
+}
+.backdrop{
+    position:fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.backdrop.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+.modal{
+    position: absolute;
+    min-width: 528px;
+    min-height: 581px;
+    background-color: var(--primery-white-color);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.modal-close{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1)
+}
+.modal-icon{
+    width: 100%;
+    align-items: center;
 }
 
 .features{
@@ -222,7 +272,7 @@ header{
     color: var(--primery-text-color);
 }
 .description {
-    background-color: var(--primery-white-color) ;
+    background-color: var(--primery-white-color);
     padding-bottom: 94px;
 }
 .description-title{
@@ -230,13 +280,30 @@ header{
 }
 .card{
     display: flex;
-
 }
-.card li{
+.description-image:not(:last-child){
     margin-right: 30px;
 }
-.card li:last-child {
-    margin-right: 0;
+
+.description-image {
+    width: 370px;
+    position: relative;
+}
+
+.description-text {
+    position: absolute;
+    bottom: 0;
+    min-height: 70px;
+    width: 100%;
+    padding-top: 24px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primery-white-color);
+    background-color: rgba(47, 48, 58, 0.8);
 }
 
 .team {
@@ -244,12 +311,15 @@ header{
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
 .team-first-title{
     margin-bottom: 50px;
 }
+
 .foto{
     display: flex;
 }
+
 .foto li:not(:last-child){
     margin-right: 30px;
 }
@@ -262,6 +332,7 @@ header{
     text-align: center;
     padding-bottom: 10px;
 }
+
 .team-text {
     color: var(--primery-text-color);
     font-size: 16px;
@@ -269,6 +340,7 @@ header{
     text-align: center;
     margin-bottom: 16px;
 }
+
 .link {
     display: flex;
     padding-right: 30px;
@@ -288,6 +360,9 @@ header{
     width: 100%;
     height: 100%;
     justify-content: center;
+    fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link li:not(:last-child) {
@@ -297,20 +372,13 @@ header{
 .link-hover:focus
  {
     background-color: var(--accent-color);
+    fill: var(--primery-white-color);
 }
-
 .team-icon{
     width: 100%;
     height: 100%;
 }
-.link-hover{
-    fill: #AFB1B8;
-}
 
-.link-hover:hover,
-.link-hover:focus {
-    fill: var(--primery-white-color);
-}
 
 .color{
     background-color: var(--primery-white-color);
@@ -361,6 +429,8 @@ header{
     color: #AFB1B8 ;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-icon{
@@ -403,6 +473,7 @@ header{
     font-size: 14px;
     line-height: 1.71;
     padding-bottom: 9px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-nav:hover,
 .address-nav:focus {
@@ -414,6 +485,7 @@ header{
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .about:not(:last-child) {
@@ -427,6 +499,10 @@ header{
 .white{
     color: var(--primery-white-color);
 }
+.address-icon{
+    margin-left: 70px;
+}
+
 .address-icon h3{
     margin-bottom: 20px;
     color: var(--primery-white-color);
@@ -455,6 +531,7 @@ header{
     height: 100%;
     background-color: rgba(255, 255, 255, 0.1);;
     color: var(--primery-white-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-link:hover,
 .icon-link:focus{
@@ -466,10 +543,6 @@ header{
 }
 .footer-icon {
     fill: currentColor;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
 }
         
 
@@ -505,6 +578,10 @@ header{
     border-radius: 4px;
     padding: 6px 22px;
     border: 1px solid transparent;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
  
 
@@ -525,6 +602,7 @@ header{
    margin-right: 30px;
    margin-bottom: 30px;
    border: 1px solid #EEEEEE;
+   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card li:hover,
 .card li:focus
@@ -538,6 +616,10 @@ header{
 .card li:nth-last-child(-n +3) {
     margin-bottom: 0;
 }
+.card li:hover .overlay-text{
+    transform: translateY(0);
+}
+
 .card-text{
     padding: 20px 24px;
 }
@@ -550,9 +632,32 @@ header{
     letter-spacing: 0.06em;
     text-align: left;
 }
+
 .items-text{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
+}
+
+.overlay{
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay-text{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  top: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--primery-white-color);
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
