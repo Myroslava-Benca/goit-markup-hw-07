@@ -310,6 +310,7 @@ header {
 }
 
 .modal-close {
+    cursor: pointer;
     width: 30px;
     height: 30px;
     position: absolute;
@@ -335,7 +336,7 @@ header {
     margin-top: 40px;
     margin-left: 40px;
     margin-right: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -365,7 +366,7 @@ header {
 .form-input{
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    min-height: 40px;
+    height: 40px;
     padding: 14px ;
     padding-left: 42px;
     outline: none;
@@ -423,6 +424,9 @@ header {
     clip:rect(0 0 0 0);
     overflow: hidden;
 }
+.agree-link{
+    color: var(--accent-color);
+}
 .checkbox-svg{
     position: absolute;
     border: 1.8px solid var(--text-black);
@@ -444,7 +448,7 @@ header {
 
 
 .form-check label{
-    margin-left: 23px;
+    margin-left: 25px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -872,6 +876,7 @@ header {
 }
 
 .join input {
+    color: var(--primery-white-color);
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
