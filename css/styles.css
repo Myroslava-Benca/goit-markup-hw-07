@@ -405,7 +405,6 @@ header {
 .dictates-comment:focus{
     border: 1px solid var(--accent-color);
 }
-
 .form-check{
     margin-top: 20px;
     margin-bottom: 30px;
@@ -413,8 +412,7 @@ header {
     align-items: center;
     position: relative;
 }
-
-.checkbox {
+.politic-modal-check {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -424,36 +422,46 @@ header {
     clip:rect(0 0 0 0);
     overflow: hidden;
 }
-.agree-link{
-    color: var(--accent-color);
-}
-.checkbox-svg{
-    position: absolute;
-    border: 1.8px solid var(--text-black);
-    border-radius: 2px;
-    fill: var(--primery-white-color);
-    background-color: var(--primery-white-color); 
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
-.checkbox:checked ~ .checkbox-svg,
-.checkbox:focus  ~ .checkbox-svg {
-    background-color: var(--accent-color);
-    border: 1.8px solid var(--accent-color);
-    background-origin: border-box;
-}
-
-
-
-.form-check label{
-    margin-left: 25px;
+.politic-modal {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-
+}
+.text-politic{
+    margin-left: 7px;
+}
+.agree-link{
+    color: var(--accent-color);
+}
+.politic-svg svg{
+    fill: transparent;
+    background-size: contain;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+}
+.politic-svg{
+  width: 16px;
+  height: 15px;
+  border: 1.8px solid var(--text-black);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.politic-modal-check:checked + label>span,
+.politic-modal-check:focus  + label>span {
+    background-color: var(--accent-color);
+    border: none;
+}
+.politic-modal-check:checked  + label>span svg,
+.politic-modal-check:focus + label>span svg {
+    fill: var(--primery-white-color);
 }
 .form-button{
     min-width: 200px;
