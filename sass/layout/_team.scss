@@ -1,0 +1,82 @@
+.team {
+    background-color: var(--light-grey);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.team__title--first {
+    margin-bottom: 50px;
+}
+
+.portfolio {
+    display: flex;
+}
+
+
+.portfolio__card {
+    background-color: var(--primery-white-color);
+    min-height: 368px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.portfolio__text {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.team__title {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.team__text {
+    color: var(--primery-text-color);
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.link {
+    display: flex;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.link__soc {
+    display: flex;
+    height: 44px;
+    width: 44px;
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.link__hover {
+    @extend %flex-align;
+    justify-content: center;
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        fill: var(--primery-white-color);
+    }
+}
+
+
+
+
