@@ -1,7 +1,11 @@
 .team {
     background-color: var(--light-grey);
+    padding-top: 60px;
+    padding-bottom: 30px;
+    @include desctop {
     padding-top: 94px;
     padding-bottom: 94px;
+    }
 }
 
 .team__title--first {

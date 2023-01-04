@@ -1,5 +1,5 @@
 .features {
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 60px;
 
     @include desctop {
@@ -11,17 +11,19 @@
 .features__list {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+    
 }
 
 .features__card{
-    
+   margin-left: 15px;
+   margin-right: 15px;
+   margin-top: 30px;
 @include tablet {
    width: calc((100% - 4 * 15px) / 2);
-   margin: 15px;
+
     }
 @include desctop {
-   width: calc((100%- 6 * 15px) / 4);
+   width: calc((100% - 8 * 15px) / 4);
 }
 }
 
@@ -35,7 +37,8 @@
 }
 
 .features__svg {
-    margin-top: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -50,7 +53,7 @@
     margin-bottom: 10px;
     padding-top: 30px;
     text-align: center;
-    @include desctop {
+    @include tablet {
         text-align: left;
     }
 }

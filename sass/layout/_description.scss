@@ -1,6 +1,10 @@
 .description {
     background-color: var(--primery-white-color);
     padding-bottom: 94px;
+    
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
 }
 .description__title {
     margin-bottom: 50px;
