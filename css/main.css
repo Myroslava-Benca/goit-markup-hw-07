@@ -239,6 +239,8 @@ header {
 
 .hero__title {
   color: var(--primery-white-color);
+  min-width: 360px;
+  min-height: 84px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.36;
@@ -246,6 +248,8 @@ header {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -408,20 +412,36 @@ header {
 }
 
 .team__title--first {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team__title--first {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .portfolio__card {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
   background-color: var(--primery-white-color);
-  min-height: 368px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
-.portfolio__card:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .portfolio__card {
+    width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio__card {
+    width: calc((100% - 120px) / 4);
+  }
 }
 
 .portfolio__text {
@@ -448,8 +468,7 @@ header {
 
 .link {
   display: flex;
-  padding-right: 30px;
-  padding-left: 30px;
+  justify-content: center;
 }
 
 .link__soc {

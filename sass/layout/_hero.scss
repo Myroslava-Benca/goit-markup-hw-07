@@ -32,6 +32,8 @@
 
 .hero__title {  
    color: var(--primery-white-color);
+   min-width: 360px;
+   min-height: 84px;
     font-weight: 900;
     font-size: 26px;
     line-height: 1.36;
@@ -39,6 +41,8 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-bottom: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
 
     @include desctop{
     font-size: 44px;
