@@ -2,7 +2,9 @@
     text-align: center;
     justify-content: center;
     margin-top: 60px;
-    // margin-left: 90px;
+    @include desctop{
+    margin-left: 90px;
+    }
     
 }
 
@@ -17,7 +19,7 @@
 }
 
 .subscribe__input {
-    @include tablet {
+    @include desctop {
      display: flex;
     }
     }
@@ -26,7 +28,6 @@
 .subscribe input {
     margin-bottom: 20px;
     color: var(--primery-white-color);
-    // width: 358px;
     width: calc(100% - 2 * 15px);
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -35,6 +36,11 @@
     // margin-right: 10px;
     padding: 15px;
     background-color: var(--primery-color);
+    @include tablet {
+        margin-left: 150px;
+        margin-right: 150px;
+        width: calc(100% - 2 * 150px);
+    }
 }
 
 .subscribe button {

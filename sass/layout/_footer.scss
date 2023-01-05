@@ -1,7 +1,9 @@
 .footer .container {
     display: block;
-    // display: flex;
-    // align-items: baseline;
+    @include desctop {
+        display: flex;
+        align-items: baseline;
+        }
 }
 
 .footer {
@@ -9,13 +11,22 @@
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
-    // display: flex;
+    display: flex;
 }
-
+.base {
+    @include tablet{
+        display: flex;
+        align-items: baseline;
+    }
+}
 .footer__logo {
     @include tablet {
     display: inline-block;
     }
+    @include tablet {
+        margin-left: 76px;
+        margin-right: 165px;
+        }
     
 }
 

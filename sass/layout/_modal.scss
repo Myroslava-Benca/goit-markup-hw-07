@@ -53,18 +53,19 @@
     }
 }
 
-
 .backdrop__title {
-    margin-top: 40px;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 12px;
+    margin: 40px 12px 40px 40px;
+    min-width: 370px;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--text-black);
+    @include desctop {
+        margin-right: 40px;
+        margin-bottom: 12px;
+    }
 }
 .form {
     width: 448px;
