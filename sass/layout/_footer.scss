@@ -1,28 +1,36 @@
 .footer .container {
-    display: flex;
-    align-items: baseline;
+    display: block;
+    // display: flex;
+    // align-items: baseline;
 }
 
 .footer {
     background-color: var(--primery-color);
     padding-top: 60px;
     padding-bottom: 60px;
-    display: flex;
+    text-align: center;
+    // display: flex;
 }
 
 .footer__logo {
+    @include tablet {
     display: inline-block;
+    }
+    
 }
 
 .footer__title {
     display: inline-block;
-    padding-bottom: 20px;
+    // padding-bottom: 20px;
 }
 .white {
     color: var(--primery-white-color);
 }
+.address {
+    margin-top: 20px;
+}
 .address li:not(:last-child) {
-    padding-bottom: 9px;
+    padding-bottom: 8px;
 }
 
 .address__nav {
@@ -53,8 +61,10 @@
 }
 
 .join {
-    display: inline-block;
-    margin-left: 94px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    // display: inline-block;
+    // margin-left: 94px;
 }
 
 .join__title {
