@@ -46,8 +46,6 @@
             </button>
         </div>
         <div class="mobile-menu">
-            <div class="container">
-                <div class="menu-content">
                 <div>
                 <button type="button" class="menu-close">
                     <svg width="40" height="40">
@@ -75,8 +73,7 @@
                     <li><a class="mobile-soc" href="">Facebook</a></li>
                     <li><a class="mobile-soc" href="">LinkedIn</a></li>
                 </ul>
-                </div>
-                </div>
+
                 </div>
             </div>
         </div>
@@ -223,7 +220,9 @@
 
                 <ul class="portfolio list">
                     <li class="portfolio__card">
-                        <img src="./images/img-3.jpg" alt="фото" >
+                        <img 
+                        srcset="./images/img-3.jpg 1x, ./images/img-mob-3-2x.jpg 2x"
+                        src="./images/img-3.jpg" alt="фото" >
                         <div class="portfolio__text">
                             <h3 class="team__title">Ігор Дем'яненко</h3>
                             <p class="team__text">Product Designer</p>
@@ -263,7 +262,9 @@
 
 
                     <li class="portfolio__card">
-                        <img src="./images/img-2.jpg" alt="фото">
+                        <img 
+                        srcset="./images/img-3.jpg 1x, ./images/img-mob-2-2x.jpg 2x"
+                        src="./images/img-2.jpg" alt="фото">
                         <div class="portfolio__text">
                             <h3 class="team__title">Ольга Рєпіна</h3>
                             <p class="team__text">Frontend Developer</p>
@@ -301,7 +302,8 @@
                     </li>
 
                     <li class="portfolio__card">
-                        <img src="./images/img-1.jpg" alt="фото">
+                        <img srcset="./images/img-1.jpg 1x, ./images/img-mob-1-2x.jpg 2x"
+                        src="./images/img-1.jpg" alt="фото">
                         <div class="portfolio__text">
                             <h3 class="team__title">Микола Тарасов</h3>
                             <p class="team__text">Marketing</p>
@@ -339,7 +341,8 @@
                     </li>
 
                     <li class="portfolio__card">
-                        <img src="./images/img.jpg" alt="фото">
+                        <img srcset="./images/img.jpg 1x, ./images/img-mob-2x.jpg 2x"
+                        src="./images/img.jpg" alt="фото">
                         <div class="portfolio__text">
                             <h3 class="team__title">Михайло Єрмаков</h3>
                             <p class="team__text">UI Designer</p>

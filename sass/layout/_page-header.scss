@@ -19,11 +19,16 @@ header {
         @extend %flex-align;
         align-items: center;
         justify-content: space-between;
+        @include desctop {
+            justify-content: center;
+            }
+
     
 }
 
 .header__navigation {
     display: flex;
+   
 }
 
 .header__menu {

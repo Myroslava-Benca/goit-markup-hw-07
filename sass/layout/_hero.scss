@@ -6,6 +6,12 @@
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
             url(../images/header_tel.jpg);
+    @include retina {
+    background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+                url(../images/header_tel-2x.jpg);
+    }
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -17,9 +23,15 @@
     @include tablet {
         max-width: 768px;
         background-image: linear-gradient(to right,
-             rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
             url(../images/header_tablet.jpg);
+    @include retina {
+        background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+           url(../images/header_tablet-2x.jpg);
+        }
     }
     @include desctop {
         max-width: 1600px;
@@ -27,6 +39,12 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
         url(../images/fon.jpg);
+    @include retina {
+        background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url(../images/header_fon-2x.jpg);
+        }
         padding-top: 200px;
         padding-bottom: 200px;
     }
