@@ -20,6 +20,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: left 300ms, visibility 300ms;
 
     & .container {
         width: 100%;

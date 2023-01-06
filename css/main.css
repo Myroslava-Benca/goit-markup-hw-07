@@ -1175,6 +1175,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: left 300ms, visibility 300ms;
 }
 .mobile-menu .container {
   width: 100%;
