@@ -110,14 +110,19 @@ header {
 @media screen and (min-width: 768px) {
   header {
     padding-top: 21px;
-    padding-bottom: 21px;
+    padding-bottom: 18px;
   }
 }
 @media screen and (min-width: 1200px) {
   header {
     padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 20px;
   }
+}
+
+.header {
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header__navigation {
@@ -162,7 +167,7 @@ header {
   letter-spacing: 0.02em;
   text-decoration: none;
   padding-top: 28px;
-  padding-bottom: 28px;
+  padding-bottom: 38px;
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -616,12 +621,15 @@ header {
 @media screen and (min-width: 768px) {
   .footer__logo {
     display: inline-block;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer__logo {
     margin-left: 76px;
     margin-right: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    text-align: left;
+    margin-left: 0px;
+    margin-right: 70px;
   }
 }
 
@@ -635,6 +643,7 @@ header {
 
 .address {
   margin-top: 20px;
+  min-width: 231px;
 }
 
 .address li:not(:last-child) {
@@ -729,6 +738,11 @@ header {
   color: var(--primery-white-color);
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .subscribe__title {
+    text-align: left;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .subscribe__input {
@@ -752,6 +766,13 @@ header {
     margin-left: 150px;
     margin-right: 150px;
     width: calc(100% - 300px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe input {
+    margin-left: 0px;
+    margin-right: 10px;
+    min-width: 368px;
   }
 }
 
@@ -962,8 +983,14 @@ header {
 
 .hero__portfolio {
   border: 1px solid #ECECEC;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .button li {

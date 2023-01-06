@@ -18,16 +18,20 @@
         display: flex;
         align-items: baseline;
     }
+
 }
 .footer__logo {
     @include tablet {
-    display: inline-block;
-    }
-    @include tablet {
+       display: inline-block;
         margin-left: 76px;
         margin-right: 165px;
         }
-    
+    @include desctop {
+        text-align: left;
+        margin-left: 0px;
+        margin-right: 70px;
+        }
+             
 }
 
 .footer__title {
@@ -39,6 +43,7 @@
 }
 .address {
     margin-top: 20px;
+    min-width: 231px;
 }
 .address li:not(:last-child) {
     padding-bottom: 8px;
