@@ -16,9 +16,9 @@ header {
 }
 
 .header {
-        @extend %flex-align;
-        align-items: center;
-        justify-content: space-between;
+    @extend %flex-align;
+    align-items: center;
+    justify-content: space-between;
         @include desctop {
             justify-content: center;
             }

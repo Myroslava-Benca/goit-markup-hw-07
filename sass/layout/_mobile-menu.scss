@@ -2,11 +2,13 @@
     margin-left: auto;
     border: none;
     background-color: var(--primery-white-color);
+
     @include tablet {
         display: none;
     }
 }
-.mobile-menu{
+
+.mobile-menu {
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -17,15 +19,17 @@
     padding: 10px 15px 48px 48px;
     display: flex;
     flex-direction: column;
-    height: 100%;
     justify-content: space-between;
-    & .container{
+
+    & .container {
         width: 100%;
     }
-    @include tablet{
+
+    @include tablet {
         display: none;
     }
 }
+
 
 .menu-close {
     display: block;
@@ -37,12 +41,13 @@
 // .mobile-header-menu{
 
 // }
-.mobile-header-menu li{
-    &:not(:last-child){
+.mobile-header-menu li {
+    &:not(:last-child) {
         margin-bottom: 32px;
     }
 }
-.mobile-header-nav{
+
+.mobile-header-nav {
     color: var(--title-text-color);
     text-decoration: none;
     font-weight: 500;
@@ -50,23 +55,26 @@
     line-height: 47px;
     letter-spacing: 0.02em;
 }
+
 .curent {
     color: var(--accent-color);
 }
-.mobile-header-link li{
-    &:not(:last-child){
+
+.mobile-header-link li {
+    &:not(:last-child) {
         margin-bottom: 32px;
     }
 }
 
-.mobile-contact-tel{
-   text-decoration: none;
-   font-weight: 500;
+.mobile-contact-tel {
+    text-decoration: none;
+    font-weight: 500;
     font-size: 34px;
     line-height: 40px;
     letter-spacing: 0.02em;
     color: var(--accent-color);
 }
+
 .mobile-contact-email {
     text-decoration: none;
     font-weight: 500;
@@ -75,20 +83,24 @@
     letter-spacing: 0.02em;
     color: var(--primery-text-color);
 }
-.mobile-soc-list{
+
+.mobile-soc-list {
     display: flex;
     margin-top: 64px;
 }
-.mobile-soc-list li{
+
+.mobile-soc-list li {
     &:not(:first-child) {
         padding-left: 10px;
-        }
+    }
+
     &:not(:last-child) {
-    padding-right: 10px;
-    border-right: 1px solid rgba(33, 33, 33, 0.2); 
+        padding-right: 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
     }
 }
-.mobile-soc{
+
+.mobile-soc {
     text-decoration: none;
     font-weight: 500;
     font-size: 18px;
@@ -96,5 +108,3 @@
     letter-spacing: 0.02em;
     color: var(--accent-color);
 }
-
-
