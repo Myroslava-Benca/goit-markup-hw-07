@@ -998,7 +998,9 @@ header {
 .form__button {
   min-width: 200px;
   min-height: 50px;
-  margin-left: 123px;
+  margin: 0 auto;
+  display: block;
+  justify-content: center;
   margin-bottom: 40px;
   background-color: var(--accent-color);
   color: var(--primery-white-color);
