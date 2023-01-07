@@ -15,33 +15,36 @@
     background-color: var(--primery-white-color);
     top: 0px;
     left: 0px;
-    right: 0px;
+    z-index: 999;
     padding: 10px 15px 48px 48px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: left 300ms, visibility 300ms;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
 
     & .container {
         width: 100%;
     }
-
-    @include tablet {
-        display: none;
-    }
 }
 
+.mobile-menu.is-open{
+     transform: translateX(0);
+}
 
 .menu-close {
     display: block;
     margin-left: auto;
     border: none;
     background-color: var(--primery-white-color);
+    
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
 }
 
-// .mobile-header-menu{
 
-// }
 .mobile-header-menu li {
     &:not(:last-child) {
         margin-bottom: 32px;
