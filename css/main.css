@@ -511,6 +511,7 @@ header {
 @media screen and (min-width: 1200px) {
   .portfolio__card {
     width: calc((100% - 120px) / 4);
+    margin-bottom: 0px;
   }
 }
 
