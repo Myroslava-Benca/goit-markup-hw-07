@@ -868,14 +868,23 @@ header {
 
 .backdrop__modal {
   position: absolute;
-  min-width: 450px;
-  height: 609px;
   background-color: var(--primery-white-color);
   top: 50%;
   left: 50%;
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 480px) {
+  .backdrop__modal {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .backdrop__modal {
+    min-width: 450px;
+    height: 609px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .backdrop__modal {
@@ -907,7 +916,6 @@ header {
 
 .backdrop__title {
   margin: 40px 12px 40px 40px;
-  min-width: 370px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -917,7 +925,6 @@ header {
 }
 
 .form {
-  min-width: 370px;
   margin-left: 40px;
   margin-right: 40px;
 }
