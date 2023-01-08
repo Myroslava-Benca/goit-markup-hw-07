@@ -194,7 +194,7 @@ header {
 
 .header__contact {
   display: flex;
-  color: var(--title-text-color);
+  color: var(--primery-text-color);
   font-weight: 500;
   font-size: 12px;
   line-height: 1.14;
@@ -206,6 +206,11 @@ header {
 .header__contact:hover, .header__contact:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .header__contact {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 767px) {
   .header__contact {
@@ -570,8 +575,8 @@ header {
 }
 @media screen and (min-width: 1200px) {
   .client {
-    margin-top: 60px;
-    margin-bottom: 30px;
+    margin-top: 94px;
+    margin-bottom: 94px;
   }
 }
 
@@ -585,6 +590,7 @@ header {
 @media screen and (min-width: 1200px) {
   .client__title {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 
@@ -607,6 +613,7 @@ header {
 @media screen and (min-width: 1200px) {
   .client__icon {
     width: calc((100% - 180px) / 6);
+    margin-bottom: 0px;
   }
 }
 
@@ -649,7 +656,8 @@ header {
 }
 @media screen and (min-width: 1200px) {
   .footer {
-    padding-top: 60px;
+    padding-top: 0px;
+    padding-bottom: 60px;
   }
 }
 
@@ -732,6 +740,11 @@ header {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .join__title {
+    text-align: left;
+  }
 }
 
 .join__list {

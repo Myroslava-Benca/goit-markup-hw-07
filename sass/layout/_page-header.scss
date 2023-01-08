@@ -84,7 +84,7 @@ header {
 
 .header__contact {
         display: flex;
-        color: var(--title-text-color);
+        color: var(--primery-text-color);
         font-weight: 500;
         font-size: 12px;
         line-height: 1.14;
@@ -97,10 +97,12 @@ header {
         &:hover,
         &:focus {
             color: var(--accent-color);
-            fill: var(--accent-color);
-        }
+                fill: var(--accent-color);}
+
+        @include desctop{
+            font-size: 14px;
+            }
     
-        
     @media screen and (max-width:767px){
     display: none;
     }
