@@ -1,16 +1,20 @@
 .hero__portfolio {
-    border: 1px solid #ECECEC;
+    border-top: 1px solid #ECECEC;
     padding-top: 60px;
     padding-bottom: 60px;
     @include desctop {
     padding-top: 94px;
     padding-bottom: 94px;
+
     }
 }
 
 .button li {
     margin-right: 8px;
     margin-bottom: 15px;
+    @media  screen and(max-width:480px) {
+        
+    }
 }
 
 .button {
@@ -20,10 +24,10 @@
     margin-bottom: 50px;
     padding-top: 0;
     padding-bottom: 0;
-    @media  screen and (max-width:480px){
-        margin-left: 15px;
+    @media  screen and (max-width:767px){
+        min-width: 350px;
         justify-content: left;
-        min-width:350px;
+        min-width: 350px;
         flex-wrap: wrap;
     }
 
@@ -52,7 +56,7 @@
         background-color: var(--accent-color);
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     }
-     @media  screen and (max-width:480px){
+     @media  screen and (max-width:767px){
        border: none;
     }
 
@@ -61,6 +65,7 @@
 .card {
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .card li {
@@ -86,16 +91,20 @@
     &:hover .card__transform {
         transform: translateY(0);
         }
-        @media  screen and (max-width:480px){
-        width: 100%;
-        margin-right: 15px;
-        margin-left: 15px;
+        @media  screen and (max-width:767px){
+        width: calc(100% - 2 * 15px);
+    }
+    @include tablet{
+        width: calc((100% - 8 * 15px) / 3);
 
     }
 }
 .card__overlay {
     position: relative;
     overflow: hidden;
+}
+.card__overlay img{
+    width: 100%;
 }
 
 .card__transform {

@@ -222,9 +222,16 @@
 
                 <ul class="portfolio list">
                     <li class="portfolio__card">
-                        <img 
-                        srcset="./images/img-3.jpg 1x, ./images/img-mob-3-2x.jpg 2x"
-                        src="./images/img-3.jpg" alt="фото" >
+                        
+                        <picture>
+                            <source srcset="./images/img1d-1x 1x, ./images/img1d-2x 2x" media="(min-width:1200px)">
+                            <source srcset="./images/img1t-1x 1x, ./images/img1t-2x 2x" media="(min-width:768px)">
+                            <source srcset="./images/img1m-1x 1x, ./images/img1m-2x 2x" media="(min-width:480px)">
+                            <img srcset="./images/img1d-1x 1x, ./images/img1d-2x 2x" 
+                            src="./images/./images/img1d-1x" alt="фото">
+                        </picture>
+                        
+                        
                         <div class="portfolio__text">
                             <h3 class="team__title">Ігор Дем'яненко</h3>
                             <p class="team__text">Product Designer</p>
@@ -264,9 +271,13 @@
 
 
                     <li class="portfolio__card">
-                        <img 
-                        srcset="./images/img-3.jpg 1x, ./images/img-mob-2-2x.jpg 2x"
-                        src="./images/img-2.jpg" alt="фото">
+                        <picture>
+                            <source srcset="./images/img2d-1x 1x, ./images/img2d-2x 2x" media="(min-width:1200px)">
+                            <source srcset="./images/img2t-1x 1x, ./images/img2t-2x 2x" media="(min-width:768px)">
+                            <source srcset="./images/img2m-1x 1x, ./images/img2m-2x 2x" media="(min-width:480px)">
+                            <img srcset="./images/img1d-2x 1x, ./images/img2d-2x 2x" 
+                            src="./images/./images/img2d-1x" alt="фото">
+                        </picture>
                         <div class="portfolio__text">
                             <h3 class="team__title">Ольга Рєпіна</h3>
                             <p class="team__text">Frontend Developer</p>
@@ -304,8 +315,12 @@
                     </li>
 
                     <li class="portfolio__card">
-                        <img srcset="./images/img-1.jpg 1x, ./images/img-mob-1-2x.jpg 2x"
-                        src="./images/img-1.jpg" alt="фото">
+                        <picture>
+                            <source srcset="./images/img3d-1x 1x, ./images/img3d-2x 2x" media="(min-width:1200px)">
+                            <source srcset="./images/img3t-1x 1x, ./images/img3t-2x 2x" media="(min-width:768px)">
+                            <source srcset="./images/img3m-1x 1x, ./images/img3m-2x 2x" media="(min-width:480px)">
+                            <img srcset="./images/img3d-2x 1x, ./images/img3d-2x 2x" src="./images/./images/img3d-1x" alt="фото">
+                        </picture>
                         <div class="portfolio__text">
                             <h3 class="team__title">Микола Тарасов</h3>
                             <p class="team__text">Marketing</p>
@@ -343,8 +358,12 @@
                     </li>
 
                     <li class="portfolio__card">
-                        <img srcset="./images/img.jpg 1x, ./images/img-mob-2x.jpg 2x"
-                        src="./images/img.jpg" alt="фото">
+                        <picture>
+                            <source srcset="./images/img4d-1x 1x, ./images/img4d-2x 2x" media="(min-width:1200px)">
+                            <source srcset="./images/img4t-1x 1x, ./images/img4t-2x 2x" media="(min-width:768px)">
+                            <source srcset="./images/img4m-1x 1x, ./images/img4m-2x 2x" media="(min-width:480px)">
+                            <img srcset="./images/img4d-2x 1x, ./images/img4d-2x 2x" src="./images/./images/img4d-1x" alt="фото">
+                        </picture>
                         <div class="portfolio__text">
                             <h3 class="team__title">Михайло Єрмаков</h3>
                             <p class="team__text">UI Designer</p>

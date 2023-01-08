@@ -10,8 +10,10 @@
 
 .team__title--first {
     margin-bottom: 30px;
+    font-size: 28px;
     @include desctop{
     margin-bottom: 50px;
+        font-size: 36px;   
     }
 }
 
