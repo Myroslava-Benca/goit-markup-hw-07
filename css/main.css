@@ -490,6 +490,7 @@ header {
 }
 
 .portfolio__card {
+  width: calc(100% - 30px);
   margin-left: 15px;
   margin-right: 15px;
   margin-bottom: 30px;
@@ -506,6 +507,10 @@ header {
   .portfolio__card {
     width: calc((100% - 120px) / 4);
   }
+}
+
+.portfolio__card picture {
+  width: 100%;
 }
 
 .portfolio__text {
