@@ -17,11 +17,10 @@ header {
 
 .header {
     @extend %flex-align;
-    align-items: center;
     justify-content: space-between;
-        @include desctop {
-            justify-content: center;
-            }
+    @include desctop {
+        justify-content: center;
+        }
 
     
 }
@@ -50,6 +49,7 @@ header {
     }
     @include desctop {
         display: flex;
+        align-items: center;
         margin-left: 315px;
     }
 }
@@ -131,6 +131,7 @@ header {
     margin-bottom: 10px;   
     @include desctop{
         margin-right: 30px;
+        margin-bottom: 0px;
     }
     
 }

@@ -121,7 +121,6 @@ header {
 }
 
 .header {
-  align-items: center;
   justify-content: space-between;
 }
 @media screen and (min-width: 1200px) {
@@ -160,6 +159,7 @@ header {
 @media screen and (min-width: 1200px) {
   .header__link {
     display: flex;
+    align-items: center;
     margin-left: 315px;
   }
 }
@@ -242,6 +242,7 @@ header {
 @media screen and (min-width: 1200px) {
   .email {
     margin-right: 30px;
+    margin-bottom: 0px;
   }
 }
 
